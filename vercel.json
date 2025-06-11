@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "cd ProjectWebsite && npm ci && npm run build",
-  "outputDirectory": "ProjectWebsite/build",
-  "installCommand": "cd ProjectWebsite && npm ci",
+  "buildCommand": "npm ci && npm run build",
+  "outputDirectory": "build",
+  "installCommand": "npm ci",
   "framework": "create-react-app",
   "env": {
     "NODE_ENV": "production",
