@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
+  "buildCommand": "cd ProjectWebsite && npm install --legacy-peer-deps && GENERATE_SOURCEMAP=false NODE_ENV=production npm run build",
   "outputDirectory": "ProjectWebsite/build",
-  "installCommand": "npm install",
+  "installCommand": "cd ProjectWebsite && npm install --legacy-peer-deps",
   "framework": "create-react-app",
   "env": {
     "NODE_ENV": "production",
@@ -33,5 +33,19 @@
       "src": "/(.*)",
       "dest": "/index.html"
     }
-  ]
+  ],
+  "build": {
+    "env": {
+      "NODE_ENV": "production"
+    }
+  },
+  "github": {
+    "enabled": true,
+    "silent": true
+  },
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
 } 
