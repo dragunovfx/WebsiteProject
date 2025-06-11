@@ -1,0 +1,12 @@
+{
+  "name": "website-project-root",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "ProjectWebsite"
+  ],
+  "scripts": {
+    "build": "cd ProjectWebsite && npm install && npm run build",
+    "start": "cd ProjectWebsite && npm start"
+  }
+}
