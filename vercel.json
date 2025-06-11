@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "buildCommand": "cd ProjectWebsite && npm install --legacy-peer-deps && GENERATE_SOURCEMAP=false NODE_ENV=production npm run build",
+  "buildCommand": "npm run build",
   "outputDirectory": "ProjectWebsite/build",
-  "installCommand": "cd ProjectWebsite && npm install --legacy-peer-deps",
+  "installCommand": "npm install",
   "framework": "create-react-app",
   "env": {
     "NODE_ENV": "production",

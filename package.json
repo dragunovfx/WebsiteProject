@@ -6,7 +6,7 @@
     "ProjectWebsite"
   ],
   "scripts": {
-    "build": "cd ProjectWebsite && npm install && npm run build",
+    "build": "cd ProjectWebsite && npm install --legacy-peer-deps && GENERATE_SOURCEMAP=false NODE_ENV=production npm run build",
     "start": "cd ProjectWebsite && npm start"
   }
 }
